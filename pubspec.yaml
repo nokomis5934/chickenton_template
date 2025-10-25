@@ -10,18 +10,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  
+  # 로컬 데이터베이스: 서버 없이 영구 저장소 역할
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  
+  # 암호화: 비밀번호를 안전하게 저장하기 위함
+  encrypt: ^5.0.1
+  
+  # UI/UX: 목록 삭제 시 슬라이드 기능 추가
+  flutter_slidable: ^3.0.1 
+  
+  # 날짜 형식 지정 (선택 사항이지만 추천)
+  intl: ^0.18.1
 
-  flutter_riverpod: ^3.0.3
-  google_fonts: ^6.3.2
-  intl: ^0.20.2
-  easy_localization: ^3.0.8
-
-  # Firebase
-  firebase_core: ^4.2.0
-  firebase_crashlytics: ^5.0.3
-
-  pedantic_mono: ^1.34.0
-  http: ^1.5.0
+  # 마스터 PIN/키 안전 저장소 (iOS Keychain, Android Keystore 사용)
+  flutter_secure_storage: ^9.0.0 
 
 dev_dependencies:
   flutter_test:
